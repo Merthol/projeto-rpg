@@ -1,0 +1,15 @@
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\bin\Debug\net6.0\projeto-rpg.exe
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\bin\Debug\net6.0\projeto-rpg.deps.json
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\bin\Debug\net6.0\projeto-rpg.runtimeconfig.json
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\bin\Debug\net6.0\projeto-rpg.dll
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\bin\Debug\net6.0\ref\projeto-rpg.dll
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\bin\Debug\net6.0\projeto-rpg.pdb
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\obj\Debug\net6.0\projeto-rpg.csproj.AssemblyReference.cache
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\obj\Debug\net6.0\projeto-rpg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\obj\Debug\net6.0\projeto-rpg.AssemblyInfoInputs.cache
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\obj\Debug\net6.0\projeto-rpg.AssemblyInfo.cs
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\obj\Debug\net6.0\projeto-rpg.csproj.CoreCompileInputs.cache
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\obj\Debug\net6.0\projeto-rpg.dll
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\obj\Debug\net6.0\ref\projeto-rpg.dll
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\obj\Debug\net6.0\projeto-rpg.pdb
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-rpg\obj\Debug\net6.0\projeto-rpg.genruntimeconfig.cache
