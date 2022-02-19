@@ -1,20 +1,58 @@
 namespace projeto_rpg.src.Entities
 {
-    public abstract class Hero
+    public class Hero
     {
-        public string name;
-        public int level;
-        public string heroeType;
-        public int healPointsTotal;
-        public int healPoints;
-        public int manaPointsTotal;
-        public int manaPoints;
+        protected string name;
+        protected int level;
+        protected string heroeType;
+        protected int healPointsTotal;
+        protected int healPoints;
+        protected int manaPointsTotal;
+        protected int manaPoints;
+        protected PrimaryAttributes primaryAttributes;
+        protected SecondaryAttributes secondaryAttributes;
 
-        public Hero(string name, int level, string heroeType)
+        public Hero(string name, string heroeType)
         {
             this.name = name;
-            this.level = level;
+            this.level = 1;
             this.heroeType = heroeType;
+        }
+
+        protected struct PrimaryAttributes
+        {
+            public int strength;
+            public int intelligence;
+            public int agility;
+            public int vitality;
+        }
+
+        protected struct SecondaryAttributes
+        {
+            public double attack;
+            public double magicalAttack;
+            public double defense;
+            public double magicalDefence;
+            public double attackSpeed;
+        }
+
+        protected void UpdateStatus()
+        {
+            secondaryAttributes.attack = primaryAttributes.strength * 3;
+            secondaryAttributes.magicalAttack = primaryAttributes.intelligence * 3;
+            secondaryAttributes.defense = primaryAttributes.strength * 2;
+            secondaryAttributes.magicalDefence = primaryAttributes.intelligence * 2;
+            secondaryAttributes.attackSpeed = primaryAttributes.agility * 0.1;
+        }
+
+        protected virtual void UpdateTotalHealMana()
+        {
+
+        }
+
+        public virtual void LevelUp(int up)
+        {
+
         }
 
         public override string ToString()
@@ -27,7 +65,31 @@ namespace projeto_rpg.src.Entities
 
         public virtual string Attack()
         {
-            return this.name + " realizou um ataque.";
+            return "";
         }
+
+        public string displayPrimaryAttributes()
+        {
+            string exibition;
+            exibition = $"Força:\t\t{this.primaryAttributes.strength}\n";
+            exibition = exibition + $"Inteligência:\t{this.primaryAttributes.intelligence}\n";
+            exibition = exibition + $"Agilidade:\t{this.primaryAttributes.agility}\n";
+            exibition = exibition + $"Vitalidade:\t{this.primaryAttributes.vitality}";
+
+            return exibition;
+        }
+
+        public string displaySecondaryAttributes()
+        {
+            string exibition;
+            exibition = $"Ataque:\t\t{this.secondaryAttributes.attack}\n";
+            exibition = exibition + $"Ataque Mágico:\t{this.secondaryAttributes.magicalAttack}\n";
+            exibition = exibition + $"Defesa:\t\t{this.secondaryAttributes.defense}\n";
+            exibition = exibition + $"Defesa mágica:\t{this.secondaryAttributes.magicalDefence}\n";
+            exibition = exibition + $"Veloc. ataque:\t{Math.Round(this.secondaryAttributes.attackSpeed, 2)}";
+
+            return exibition;
+        }
+
     }
 }
