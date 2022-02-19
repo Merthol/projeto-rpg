@@ -22,6 +22,7 @@ namespace projeto_rpg.src.Entities
 
         public virtual void LevelUp()
         {
+            this.level++;
             this.primaryAttributes.strength = this.primaryAttributes.strength + 2;
             this.primaryAttributes.intelligence = this.primaryAttributes.intelligence + 3;
             this.primaryAttributes.agility = this.primaryAttributes.agility + 2;

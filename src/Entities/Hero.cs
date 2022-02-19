@@ -42,7 +42,7 @@ namespace projeto_rpg.src.Entities
             secondaryAttributes.magicalAttack = primaryAttributes.intelligence * 3;
             secondaryAttributes.defense = primaryAttributes.strength * 2;
             secondaryAttributes.magicalDefence = primaryAttributes.intelligence * 2;
-            secondaryAttributes.attackSpeed = primaryAttributes.agility * 0.1;
+            secondaryAttributes.attackSpeed = primaryAttributes.agility * 0.03;
         }
 
         protected virtual void UpdateTotalHealMana()
