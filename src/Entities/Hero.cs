@@ -55,6 +55,11 @@ namespace projeto_rpg.src.Entities
 
         }
 
+        public virtual void LevelUp()
+        {
+
+        }
+
         public override string ToString()
         {
             string exibition = $"{this.name}\nLvl: {this.level}\t{this.heroeType}\n";

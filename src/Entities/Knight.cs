@@ -20,7 +20,7 @@ namespace projeto_rpg.src.Entities
             this.manaPointsTotal = 30 + (level * 5) + this.primaryAttributes.intelligence * 4;
         }
 
-        public virtual void LevelUp()
+        public override void LevelUp()
         {
             this.level++;
             this.primaryAttributes.strength = this.primaryAttributes.strength + 4;
